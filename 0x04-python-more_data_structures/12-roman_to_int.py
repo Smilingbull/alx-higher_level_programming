@@ -8,8 +8,8 @@ def roman_to_int(roman_string: str):
 
     for i in range(len(numbers) - 1):
         if numbers[i] >= numbers[i+1]:
-            result += numbers[i]
+            rep += numbers[i]
         else:
-            result -= numbers[i]
+            rep -= numbers[i]
 
-    return result
+    return rep
